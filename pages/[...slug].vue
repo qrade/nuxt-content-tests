@@ -13,5 +13,8 @@
 <script setup>
 const { locale } = useI18n();
 const { path } = useRoute();
-const pathWithoutLocale = path.replace(`/${locale.value}`, '/');
+const pathWithoutLocale = path.replace(
+  new RegExp(`^/${locale.value}(\/|$)`),
+  '/'
+);
 </script>
