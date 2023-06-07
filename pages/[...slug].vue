@@ -1,7 +1,7 @@
 <template>
   <div>
     <pre>
-    curretn locale: {{ locale }} 
+    current locale: {{ locale }} 
     current pathWithoutLocale: {{ pathWithoutLocale }}
     </pre>
     <ContentDoc

@@ -1,3 +1,3 @@
 # foo italiano
 
-Questa è la pagina foo in Italiano
+Questa è la pagina it/foo.md
