@@ -1,42 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 + content + I18n double language setup
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- based on Nuxt 3 Minimal Starter
+- open issues:
 
-## Setup
+1. what is the right setup to have multi language content preserving default routing?
 
-Make sure to install the dependencies:
+- using language the default route is not working: had to patch the path removing the language and adding language to the query
+- using language the automatic query of Content components are not working: had to make a query in \[...slug].vue page
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+2. generated static files give a 404 when point manually to some urls (e.g. clicking on foo link from italian home page is working but navigating to /it/foo is not )
