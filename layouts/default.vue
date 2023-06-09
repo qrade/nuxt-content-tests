@@ -14,6 +14,17 @@
   </div>
 </template>
 
+<style>
+  header { background-color: #eee;
+  padding: 10px; }
+  nav { background-color: #ddd; }
+  
+
+main a { background-color: #ff0;
+color: red;}
+
+</style>
+
 <script setup>
 const localePath = useLocalePath();
 const switchLocalePath = useSwitchLocalePath();
