@@ -31,7 +31,7 @@ a side effect of this is that automatic routing of / to index.md is not working 
 test it with:
 
 ```bash
-    npx nuxi dev
+npx nuxi dev
 ```
 
 2. generated static files give a 404 when point manually to some urls (e.g. clicking on foo link from italian home page is working but navigating to /it/foo is not )
@@ -39,6 +39,6 @@ test it with:
    test it with:
 
 ```bash
-   npx nuxi generate
-   npx http-server dist
+npx nuxi generate
+npx http-server dist
 ```
