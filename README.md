@@ -8,12 +8,14 @@
 
 - using content locales the automatic mapping url---> content is not working: had to patch the path removing the language prefix url and adding language to the query
 
-```javascript
+```js
 // [...slug].vue
 
 <template>
     ...
-    <ContentDoc :query="{ path: pathWithoutLocale, where: { _locale: locale } }"/>
+    <ContentDoc
+    :query="{ path: pathWithoutLocale, where: { _locale: locale } }"
+    />
     ...
 </template>
 
