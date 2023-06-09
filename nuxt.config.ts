@@ -1,19 +1,20 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+ 
   modules: ['@nuxt/content', '@nuxtjs/i18n'],
   content: {
     locales: ['en', 'it'],
-    defaultLocale: 'it',
+    defaultLocale: 'en',
   },
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
-      { code: 'it', iso: 'it-IT', name: 'Italiano', file: 'it.json' },
+      { code: 'en', iso: 'en-US', name: 'English' },
+      { code: 'it', iso: 'it-IT', name: 'Italiano' },
     ],
-    defaultLocale: 'it',
-    langDir: 'locales/',
+    defaultLocale: 'en',
+
   },
   devtools: {
     enabled: true,
-  },
-});
+  }
+})
